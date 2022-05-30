@@ -37,6 +37,11 @@
 
 .post-caption {
     display: block;
+    text-align: left;
+}
+
+.post-caption-meta {
+    display: none;
 }
 
 .post-link {
