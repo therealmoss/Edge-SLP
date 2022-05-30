@@ -37,6 +37,6 @@
 
 @media (max-width: 640px) {
     .post-feed .grid-item {
-        width: calc(100% / 2);
+        width: 100%;
     }
 }

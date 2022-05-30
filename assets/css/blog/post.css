@@ -51,11 +51,11 @@
 .post-lightbox {
     position: absolute;
     right: 15px;
-    bottom: 15px;
+    bottom: 55px;
     width: 30px;
     height: 30px;
     line-height: 30px;
-    text-align: left;
+    text-align: center;
     background-color: var(--white-color);
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
