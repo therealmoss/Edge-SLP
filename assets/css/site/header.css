@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
 }
 
 .navbar-left,
@@ -31,16 +30,16 @@
 }
 
 .logo-text {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 3px;
+    font-family: 'bulevarregular';
     text-transform: uppercase;
     white-space: nowrap;
+    font-size: 5em;
 }
 
 .nav-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: right;
 }
 
 .main-nav .menu-item {
@@ -62,9 +61,7 @@
 }
 
 @media (max-width: 767px) {
-    .navbar {
-        height: 70px;
-    }
+
 }
 
 @media (max-width: 1019px) {

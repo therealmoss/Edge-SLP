@@ -1,19 +1,6 @@
 <header class="site-header">
     <div class="navbar">
         <div class="navbar-left">
-            <div class="burger hidden-lg hidden-xl">
-                <div class="burger-bar"></div>
-                <div class="burger-bar"></div>
-            </div>
-            <div class="mobile-menu hidden-lg hidden-xl">
-                <div class="container">
-                    {{#if @site.navigation}}
-                        <nav class="mobile-nav">
-                            {{navigation}}
-                        </nav>
-                    {{/if}}
-                </div>
-            </div>
             <a class="logo" href="{{@site.url}}">
                 {{#if @site.logo}}
                     <img class="logo-image" src="{{@site.logo}}" alt="{{@site.title}}">
@@ -22,14 +9,9 @@
                 {{/if}}
             </a>
         </div>
-        {{#if @site.navigation}}
-            <nav class="main-nav hidden-xs hidden-sm hidden-md">
-                {{navigation}}
-            </nav>
-        {{/if}}
         <div class="navbar-right">
-            <div class="social">
-               {{!--  {{#if @site.facebook}}
+            {{!--<div class="social">
+                {{#if @site.facebook}}
                     <a class="social-item social-item-facebook"
                         href="{{facebook_url @site.facebook}}" target="_blank"
                         rel="noopener noreferrer" aria-label="Facebook">
@@ -52,8 +34,26 @@
                         href="https://www.instagram.com/thereal_moss/" target="_blank"
                         rel="noopener noreferrer" aria-label="Instagram">
                         INSTAGRAM >
-                </a>--}}
-            </div>
+                </a>
+                </div>--}}
+                {{#if @site.navigation}}
+                    <nav class="main-nav hidden-xs hidden-sm hidden-md">
+                        {{navigation}}
+                    </nav>
+                {{/if}}
+                <div class="burger hidden-lg hidden-xl">
+                    <div class="burger-bar"></div>
+                    <div class="burger-bar"></div>
+                </div>
+                <div class="mobile-menu hidden-lg hidden-xl">
+                    <div class="container">
+                        {{#if @site.navigation}}
+                            <nav class="mobile-nav">
+                                {{navigation}}
+                            </nav>
+                        {{/if}}
+                    </div>
+                </div>
         </div>
     </div>
 </header>

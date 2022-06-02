@@ -9,7 +9,7 @@
 }
 
 .post-feed .grid-item {
-    width: 50vw;
+    width: calc(100% / 2);
 }
 
 .post-feed .post {
@@ -27,7 +27,7 @@
     }
 
     .post-feed .grid-item {
-        width: calc(100% / 3);
+        width: calc(100% / 2);
     }
 
     .post-feed .post {
@@ -37,6 +37,6 @@
 
 @media (max-width: 640px) {
     .post-feed .grid-item {
-        width: 100%;
+        width: calc(100% / 2);
     }
 }
